@@ -31,6 +31,9 @@
         frmWidth.value = width;
         iframe.height =  height + 'px';
         frmHeight.value = height;
+
+        var newLocation = '?width=' + width + '&height=' + height + '&src=' + src;
+        window.history.pushState({}, '', newLocation);
     }
 
     // parses query parameters
