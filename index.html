@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>iFrame tester</title>
+    <style>
+        #iframe {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+<form id="frmIframe">
+    <label for="iframe_width">width:
+        <input type="number" id="iframe_width">
+    </label>
+    <label for="iframe_height">height:
+        <input type="number" id="iframe_height">
+    </label><br>
+    <label for="iframe_src">source:
+        <input type="url" id="iframe_src">
+    </label>
+    <input type="submit" value="set">
+</form>
+
+<iframe id="iframe"></iframe>
+
+<script type="application/javascript" src="iframe.js"></script>
+</body>
+</html>
